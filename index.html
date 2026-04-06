@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="license" content="MIT License" />
+    <meta name="author" content="Ahmed hamdy" />
+    <meta name="copyright" content="© 2026 Ahmed hamdy" />
+    <title>Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <header class="header">
+        <div class="header-left">
+          <div>
+            <div class="header-title">Hamdy<sub>Store</sub></div>
+          </div>
+        </div>
+        <div class="header-right">
+          <div class="icon-btn">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.75"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+              <path d="M13.73 21a2 2 0 0 1-3.46 0" /></svg
+            ><span class="notif-dot"></span>
+          </div>
+          <div class="header-admin">
+            <div class="header-avatar">AH</div>
+            <div>
+              <div class="header-admin-name">Ahmed Admin</div>
+              <div class="header-admin-role">Super Admin</div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="page">
+        <div class="page-header">
+          <div class="page-title-group">
+            <h1>All Products</h1>
+            <p>Showing 20 products in catalogue</p>
+          </div>
+          <button class="btn-primary">+ Add Product</button>
+        </div>
+
+        <div class="filters-row">
+          <div class="search-box">
+            <svg
+              class="search-icon"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <input type="text" placeholder="Search products…" />
+          </div>
+          <select class="filter-select">
+            <option>All Categories</option>
+            <option>Audio</option>
+            <option>Accessories</option>
+            <option>Watches</option>
+            <option>Footwear</option>
+            <option>Home</option>
+            <option>Tech</option>
+          </select>
+          <select class="filter-select">
+            <option>All Status</option>
+            <option>In Stock</option>
+            <option>Out of Stock</option>
+          </select>
+        </div>
+
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-img">
+              🎧<span class="product-badge badge-new">New</span>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Audio</div>
+              <div class="product-name">
+                Wireless Noise-Cancelling Headphones
+              </div>
+              <div class="product-price-row">
+                <span class="product-price">$149</span
+                ><span class="product-old-price">$199</span>
+              </div>
+              <div class="product-stock in-stock">
+                <span class="stock-dot"></span>In Stock · 24 units
+              </div>
+              <div class="product-actions">
+                <button class="btn-sm">✏ Edit</button
+                ><button class="btn-sm delete">🗑 Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">
+              👜<span class="product-badge badge-hot">Hot</span>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Accessories</div>
+              <div class="product-name">Minimalist Leather Tote Bag</div>
+              <div class="product-price-row">
+                <span class="product-price">$89</span>
+              </div>
+              <div class="product-stock in-stock">
+                <span class="stock-dot"></span>In Stock · 18 units
+              </div>
+              <div class="product-actions">
+                <button class="btn-sm">✏ Edit</button
+                ><button class="btn-sm delete">🗑 Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">⌚</div>
+            <div class="product-body">
+              <div class="product-cat">Watches</div>
+              <div class="product-name">Classic Stainless Steel Watch</div>
+              <div class="product-price-row">
+                <span class="product-price">$219</span
+                ><span class="product-old-price">$299</span>
+              </div>
+              <div class="product-stock in-stock">
+                <span class="stock-dot"></span>In Stock · 9 units
+              </div>
+              <div class="product-actions">
+                <button class="btn-sm">✏ Edit</button
+                ><button class="btn-sm delete">🗑 Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">
+              👟<span class="product-badge badge-sale">Sale</span>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Footwear</div>
+              <div class="product-name">Premium Leather Sneakers</div>
+              <div class="product-price-row">
+                <span class="product-price">$125</span
+                ><span class="product-old-price">$180</span>
+              </div>
+              <div class="product-stock out-stock">
+                <span class="stock-dot"></span>Out of Stock
+              </div>
+              <div class="product-actions">
+                <button class="btn-sm">✏ Edit</button
+                ><button class="btn-sm delete">🗑 Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">☕</div>
+            <div class="product-body">
+              <div class="product-cat">Home</div>
+              <div class="product-name">Ceramic Pour-Over Coffee Set</div>
+              <div class="product-price-row">
+                <span class="product-price">$64</span>
+              </div>
+              <div class="product-stock in-stock">
+                <span class="stock-dot"></span>In Stock · 33 units
+              </div>
+              <div class="product-actions">
+                <button class="btn-sm">✏ Edit</button
+                ><button class="btn-sm delete">🗑 Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">
+              ⌨️<span class="product-badge badge-new">New</span>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Tech</div>
+              <div class="product-name">Slim Mechanical Keyboard</div>
+              <div class="product-price-row">
+                <span class="product-price">$179</span>
+              </div>
+              <div class="product-stock in-stock">
+                <span class="stock-dot"></span>In Stock · 12 units
+              </div>
+              <div class="product-actions">
+                <button class="btn-sm">✏ Edit</button
+                ><button class="btn-sm delete">🗑 Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">
+              🧣<span class="product-badge badge-hot">Hot</span>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Accessories</div>
+              <div class="product-name">Merino Wool Scarf</div>
+              <div class="product-price-row">
+                <span class="product-price">$48</span>
+              </div>
+              <div class="product-stock out-stock">
+                <span class="stock-dot"></span>Out of Stock
+              </div>
+              <div class="product-actions">
+                <button class="btn-sm">✏ Edit</button
+                ><button class="btn-sm delete">🗑 Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">
+              🔊<span class="product-badge badge-sale">Sale</span>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Audio</div>
+              <div class="product-name">Bluetooth Portable Speaker</div>
+              <div class="product-price-row">
+                <span class="product-price">$99</span
+                ><span class="product-old-price">$130</span>
+              </div>
+              <div class="product-stock in-stock">
+                <span class="stock-dot"></span>In Stock · 7 units
+              </div>
+              <div class="product-actions">
+                <button class="btn-sm">✏ Edit</button
+                ><button class="btn-sm delete">🗑 Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">🏠</div>
+            <div class="product-body">
+              <div class="product-cat">Home</div>
+              <div class="product-name">Linen Table Runner</div>
+              <div class="product-price-row">
+                <span class="product-price">$34</span>
+              </div>
+              <div class="product-stock in-stock">
+                <span class="stock-dot"></span>In Stock · 41 units
+              </div>
+              <div class="product-actions">
+                <button class="btn-sm">✏ Edit</button
+                ><button class="btn-sm delete">🗑 Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">
+              ⌚<span class="product-badge badge-new">New</span>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Tech</div>
+              <div class="product-name">Smart Fitness Tracker</div>
+              <div class="product-price-row">
+                <span class="product-price">$189</span>
+              </div>
+              <div class="product-stock in-stock">
+                <span class="stock-dot"></span>In Stock · 15 units
+              </div>
+              <div class="product-actions">
+                <button class="btn-sm">✏ Edit</button
+                ><button class="btn-sm delete">🗑 Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">
+              👢<span class="product-badge badge-hot">Hot</span>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Footwear</div>
+              <div class="product-name">Chelsea Leather Boots</div>
+              <div class="product-price-row">
+                <span class="product-price">$245</span>
+              </div>
+              <div class="product-stock in-stock">
+                <span class="stock-dot"></span>In Stock · 6 units
+              </div>
+              <div class="product-actions">
+                <button class="btn-sm">✏ Edit</button
+                ><button class="btn-sm delete">🗑 Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">
+              🕐<span class="product-badge badge-sale">Sale</span>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Watches</div>
+              <div class="product-name">Chronograph Pilot Watch</div>
+              <div class="product-price-row">
+                <span class="product-price">$320</span
+                ><span class="product-old-price">$400</span>
+              </div>
+              <div class="product-stock out-stock">
+                <span class="stock-dot"></span>Out of Stock
+              </div>
+              <div class="product-actions">
+                <button class="btn-sm">✏ Edit</button
+                ><button class="btn-sm delete">🗑 Delete</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-img">☕</div>
+            <div class="product-body">
+              <div class="product-cat">Home</div>
+              <div class="product-name">Ceramic Pour-Over Coffee Set</div>
+              <div class="product-price-row">
+                <span class="product-price">$64</span>
+              </div>
+              <div class="product-stock in-stock">
+                <span class="stock-dot"></span>In Stock · 33 units
+              </div>
+              <div class="product-actions">
+                <button class="btn-sm">✏ Edit</button
+                ><button class="btn-sm delete">🗑 Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">
+              ⌨️<span class="product-badge badge-new">New</span>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Tech</div>
+              <div class="product-name">Slim Mechanical Keyboard</div>
+              <div class="product-price-row">
+                <span class="product-price">$179</span>
+              </div>
+              <div class="product-stock in-stock">
+                <span class="stock-dot"></span>In Stock · 12 units
+              </div>
+              <div class="product-actions">
+                <button class="btn-sm">✏ Edit</button
+                ><button class="btn-sm delete">🗑 Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">
+              🧣<span class="product-badge badge-hot">Hot</span>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Accessories</div>
+              <div class="product-name">Merino Wool Scarf</div>
+              <div class="product-price-row">
+                <span class="product-price">$48</span>
+              </div>
+              <div class="product-stock out-stock">
+                <span class="stock-dot"></span>Out of Stock
+              </div>
+              <div class="product-actions">
+                <button class="btn-sm">✏ Edit</button
+                ><button class="btn-sm delete">🗑 Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">
+              🔊<span class="product-badge badge-sale">Sale</span>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Audio</div>
+              <div class="product-name">Bluetooth Portable Speaker</div>
+              <div class="product-price-row">
+                <span class="product-price">$99</span
+                ><span class="product-old-price">$130</span>
+              </div>
+              <div class="product-stock in-stock">
+                <span class="stock-dot"></span>In Stock · 7 units
+              </div>
+              <div class="product-actions">
+                <button class="btn-sm">✏ Edit</button
+                ><button class="btn-sm delete">🗑 Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">🏠</div>
+            <div class="product-body">
+              <div class="product-cat">Home</div>
+              <div class="product-name">Linen Table Runner</div>
+              <div class="product-price-row">
+                <span class="product-price">$34</span>
+              </div>
+              <div class="product-stock in-stock">
+                <span class="stock-dot"></span>In Stock · 41 units
+              </div>
+              <div class="product-actions">
+                <button class="btn-sm">✏ Edit</button
+                ><button class="btn-sm delete">🗑 Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">
+              ⌚<span class="product-badge badge-new">New</span>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Tech</div>
+              <div class="product-name">Smart Fitness Tracker</div>
+              <div class="product-price-row">
+                <span class="product-price">$189</span>
+              </div>
+              <div class="product-stock in-stock">
+                <span class="stock-dot"></span>In Stock · 15 units
+              </div>
+              <div class="product-actions">
+                <button class="btn-sm">✏ Edit</button
+                ><button class="btn-sm delete">🗑 Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">
+              👢<span class="product-badge badge-hot">Hot</span>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Footwear</div>
+              <div class="product-name">Chelsea Leather Boots</div>
+              <div class="product-price-row">
+                <span class="product-price">$245</span>
+              </div>
+              <div class="product-stock in-stock">
+                <span class="stock-dot"></span>In Stock · 6 units
+              </div>
+              <div class="product-actions">
+                <button class="btn-sm">✏ Edit</button
+                ><button class="btn-sm delete">🗑 Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img">
+              🕐<span class="product-badge badge-sale">Sale</span>
+            </div>
+            <div class="product-body">
+              <div class="product-cat">Watches</div>
+              <div class="product-name">Chronograph Pilot Watch</div>
+              <div class="product-price-row">
+                <span class="product-price">$320</span
+                ><span class="product-old-price">$400</span>
+              </div>
+              <div class="product-stock out-stock">
+                <span class="stock-dot"></span>Out of Stock
+              </div>
+              <div class="product-actions">
+                <button class="btn-sm">✏ Edit</button
+                ><button class="btn-sm delete">🗑 Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
