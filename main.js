@@ -1,13 +1,3 @@
-hamburger = document.getElementById("hamburger");
-hamburger.addEventListener("click", () => {
-  sidebar.classList.toggle("open");
-  overlay.classList.toggle("show");
-});
-overlay.addEventListener("click", () => {
-  sidebar.classList.remove("open");
-  overlay.classList.remove("show");
-});
-
 // ── PRODUCT FILTERS ──
 const cards = Array.from(document.querySelectorAll(".product-card"));
 const grid = document.querySelector(".products-grid");
